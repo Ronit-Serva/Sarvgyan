@@ -12,7 +12,7 @@ load_dotenv()
 app = App(token=os.getenv("SLACK_BOT_TOKEN"))
 
 # Listens for the ping command and responds with the latency
-@app.command("/sarvagyan-ping")
+@app.command("/sarvgyan-ping")
 def ping_cmd_response(ack, body, respond):
 
     start = time.time_ns() 
