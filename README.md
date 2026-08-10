@@ -16,7 +16,7 @@ All available commands along with their features:
 ## How it Works?
 Listeners for each of the bot's commands are registered using `@app.command("/command")`. The communication between the app and slack servers is done via WebSocket Protocol. When a command is sent slack notifies the app with with command metadata and the respective command handler function is executed. 
 <br>
-For the WebSearch feature the app uses Tavily API, it makes a search request to the API with the given query accessed using `body['text']`. It responds with the result value of the received response to the user. 
+For the WebSearch feature the app uses Tavily API, it makes a search request to the API with the given query accessed using `body['text']`. It responds with the result value of the received response to the user. I am using the free tier of Tavily API which is capped at 1000req/month so please use **`/sarvgyan-search`** responsibly. 
 ## Credits
 - [Tavily python package](https://docs.tavily.com/sdk/python/quick-start)
 - [slack_bolt](https://docs.slack.dev/tools/bolt-python/) 
